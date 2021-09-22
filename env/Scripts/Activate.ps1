@@ -1,6 +1,5 @@
 function global:deactivate ([switch]$NonDestructive) {
     # Revert to original values
-    
     if (Test-Path function:_OLD_VIRTUAL_PROMPT) {
         copy-item function:_OLD_VIRTUAL_PROMPT function:prompt
         remove-item function:_OLD_VIRTUAL_PROMPT
